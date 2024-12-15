@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(203, 163, 210);
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(31, 0, 60);
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(31, 0, 60);
+}
+
+h3{/*Week 4 - Input changes*/
+    font-size: 15px;
+    color: rgb(51, 38, 54);
+}
+
+#buddy { /*Week 4 - Input changes*/
+    width: auto;
+    height: 95px;
+}
+
+#heart { /*Orignally img. 
+    Added the id attribute of two images in order to separate the css style of each other
+    (The music buddy and the heart picture)*/
+    display: block;
+    margin-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 150px;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(62, 23, 89);
+}

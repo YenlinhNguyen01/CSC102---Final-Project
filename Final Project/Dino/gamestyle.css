@@ -1,0 +1,67 @@
+#game {
+    width: 600px;
+    height: 198px;
+    border: 3px solid black;
+    margin: auto;
+}
+
+#cactus {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/CactusObstacle.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 110px;
+    left: 565px;
+    
+    animation: block 1s infinite linear; /*Animation is possible without Javascript. By inputing certain properties with animation in CSS, it is possible to apply animation frames in webpages*/
+}   /*However in case of proper or need to change the element of animation, Javascript is need*/
+/*Simply input the animation value will cause the element to move in frames*/
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/Dinosaur.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+/*Adding the jump animation will make the dinosaur to jump*/
+/*Inputing the linear property value of the animation will make the dinosaur jump in the same speed from start to end*/
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump { /*With the keyframes rule, animations will gradually change from it's current style to new at certain times*/
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 130px;
+    }
+
+    50% {
+        top: 80px;
+    }
+
+    80% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
+    }
+} /*For browser support, it is recommanded to define 0% to 100% selectors*/
+/*Inputing several keyframe selectors will gradually change the jump and block animation frames when running on html files*/
+
+@keyframes block {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}

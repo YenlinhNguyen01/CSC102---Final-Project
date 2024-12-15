@@ -1,0 +1,54 @@
+
+.content-table{
+    border-collapse: collapse;
+    margin: 65px 280px;
+    font-size: 20px;
+    min-width: 100px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 40);
+}
+
+.content-table thead tr{
+    background-color: skyblue;
+    color:rgb(7, 13, 48);
+    text-align: left;
+}
+
+.content-table th {
+    padding: 12px 15px;
+}
+
+.content-table td{
+    padding: 12px 15px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid gray;
+}
+
+.content-table tbody tr:nth-of-type(even){/*Inputing even or odds will change the css format of the data cell within the table*/
+    background-color: rgb(171, 215, 230);/*Example would be the even number of data cell with a different background color*/
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid skyblue;
+}
+
+.content-table tbody td.strong {
+    font-weight: bold;
+    color: green;
+}
+
+.content-table tbody td.weak{
+    font-weight: bold;
+    color: darkred;
+}
+
+.content-table tbody td.resist{
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+<!--YenLinh Nguyen-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Validation</title>
+    <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+    <a href="../MainWebsite/MainPage.html">
+        <button id="Homebutton">Back</button>   
+		<link rel="stylesheet" href="../Navigation/buttontest.css"> 
+    </a>
+    
+    <div class="container">
+        <div class="login-box">
+            <h1>Enter a code for the hidden message!</h1>
+            <form action="" id="loginform"> <!--form action tells the system where to send form-data when a form is completed or submitted-->
+                <input type="text" id="firstname" name="firstname" required placeholder="First Name">
+                <!--input tags creates a field where the user can enter data or text values. It is also one of the essential form elements over html files-->
+                <input type="text" id="lastname" name="lastname" required placeholder="Last Name">
+
+                <input type="text" id="password" name="password" required placeholder="Input the code here!" oninput="check()">
+                
+                <table id="checkbox-table">
+                    <tr id="row1"> <!--tr defines the row in a table while td defines the cell -->
+                        <td class="checkbox-cell"><input type="checkbox" name="digit" id="Digit-length" disabled></td>
+                        <td class="para-cell">The code must be 5 digits</td>
+                    </tr>
+                </table>
+
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+ <script src="userscript.js"></script>
+
+ <script>
+    document.getElementById("loginform").addEventListener("submit", function(event){
+        //Inputing this method will stop the default action of an element from happening
+        //An example would be without the preventDefault method, input valid information will return to the same page repeatedly
+        //With preventDefault, this method prevents going to the same page again thus redirecting to another html page
+        event.preventDefault();
+        var firstname = document.getElementById('firstname').value;
+        var lastname = document.getElementById ('lastname').value;
+        var password = document.getElementById('password').value; //This tells the system to grab the values of the first and last name and password
+    
+        if (firstname == "YenLinh" && lastname == "Nguyen" && password == "12002"){ //If this condition of the text values is true, the code block inside of the if statement will be executed.
+            //The if and else statements determines the program's flow based on whether the condition is true/false
+            alert("Success!")
+            //Redirecting pages has many properties with the code window.location.
+            //To define window.location: Input urls/domain name/another html file will return the URL of the current page
+            //If we run this code, the function should takes us to the messages.html file
+
+            window.location.href = "messages.html";
+        }
+        else{ //This condition is false. If we input the text value that is false, this code block will be executed instead of the code in the if statement
+            alert ("Invalid. Please try again"); 
+        }
+});
+</script>
+</body>
+</html>
+<!--I'm unsure of myself if I want to include Zip Code for this assignment unless if it's supposedly for entering a code-->
+<!--If the label input "Secret Code" is not acceptable, I'll see if I can find a way to change-->
+<!--I don't know if this assignment also is for students interacting my version of user validation page-->

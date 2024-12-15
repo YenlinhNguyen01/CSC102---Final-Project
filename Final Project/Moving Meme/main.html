@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--YenLinh Nguyen-->
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-s">
+        <title>Event Driven</title>
+        <link rel="stylesheet" href="pagestyle.css">
+    </head>
+    <body>
+        <a href="../MainWebsite/MainPage.html">
+            <button id="Homebutton">Back</button>   
+            <link rel="stylesheet" href="../Navigation/buttontest.css"> 
+        </a>
+
+        <p>Note: Characters shown in this drawing are owned and created by me</p>
+        <br>
+        <div id="background">
+            <img src="MemeTwo.png" id="image"/> 
+        </div>
+
+        <button id="firstbutton" onclick="myMove()">Fly!</button><!--A button with the id attribute will let the html file specfiy as an unique value in this document-->
+        <button id="secondbutton" onclick="reset()">Stop</button><!--The button element won't be considered a real button without the onclick event-->
+        <!--Using onclick event will allow the user to click on the html element, causing an event to occur (In terms of different id, the event will still occur but different value)-->
+
+        <script src="animation.js"></script>
+    </body>
+</html>

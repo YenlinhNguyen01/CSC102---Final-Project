@@ -1,0 +1,31 @@
+body{
+background-color: Lavender;
+}
+    
+nav{
+height:600px;
+width: 200px;
+float: left;
+padding: 5px;
+line-height: 30px;
+}
+        
+footer{
+text-align: center;
+margin-right: 200px;
+}
+
+h1{
+text-align: center;
+font-size: 45px;
+}
+
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+p{
+font-size: 20px;
+}

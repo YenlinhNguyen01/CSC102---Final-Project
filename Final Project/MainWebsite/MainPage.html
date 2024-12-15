@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng"><!--YenLinh Nguyen, 12/14/24-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-s">
+        <title>My website</title>
+        <link rel="stylesheet" href="Mainpagestyle.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                
+                <nav><!--The navigation bar or menu of the website-->
+                    <ul><!--In order to "navigate" to different html files or other webpages, an a tag with the attribute href (hyperlink reference)-->
+                        <li><a href="MainPage.html">Home</a></li><!--Inputing the link tag with the attribute will directly link to other pages-->
+                        <li><a href="../Index Obj/index.html">Index</a></li><!--An example would be the link tag with the attribute that contains the source of the index.html-->
+                        <li><a href="../Index Obj/boards.html">Objectives</a></li><!--When running and/or debugging the file, clicking the Index will directly lead you to the Index page-->
+                        <li><a href="../Dino/Dino Game.html">Dino Game</a></li><!--Because a function occur (clicking on Index) thus calling the attribute to lead the user into another page-->
+                        <li><a href="../Palindrome/string.html">Palindrome</a></li>
+                        <li><a href="../User Valid/strings.html">User Valid</a></li>
+                        <li><a href="../Table/table.html">Table</a></li>
+                    </ul><!--In case of navigation websites with folders that contain different webpages(different html files with css and js)-->
+                    <!--Either input the name of the folder or by putting "../" will bring up mutiple folders-->
+                    <!--Inputing the link of another html file that is outside the folder will result an error-->
+                    <!--The reason is the link tag automatically searchs the file in the same page directory-->
+                    <!--If linking a different html file that is outside/not in the same directory, an error will occur while running-->
+                    <!--Because that html file "does not exist" or was not in that directory of the navigation website-->
+                </nav>
+
+            </div>
+        </header>  
+
+        <div>
+            <h1>Hello! Welcome to my website!</h1>
+            <p class="intro">Click on each of the navigation tab above to check out the projects/assigments I did!</p>
+        </div>
+
+        <div class="footer_section"><!--The footer section of the website-->
+            <footer>
+                <h2><br>YenLinh Nguyen</h2>
+                <h3>University of Advancing Technology (UAT)</h3>
+                <p>2625 W Baseline RD <br> Tempe, AZ 85283</p> 
+            </footer>
+        </div>
+
+    </body>
+</html>

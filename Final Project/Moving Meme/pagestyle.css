@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(201, 194, 204);
+}
+
+p{
+    font-size: 15px;
+    color: rgb(61, 0, 61);
+}
+
+img{
+    position: absolute;/*The animation element should be set with position:absolute*/
+    margin-top: 375px;
+    margin-left: 60px;
+    width: 185px;
+    height: auto;
+}
+/*This container element should have the position: relative. The image I'm using requires the certain animation in order to reference a certain meme image I am using for this assignment*/
+#background{ /*If I set this element with the position: relative, the start function of the animation element will begin in the position that seems inaccurate to me*/
+    width: 30%;
+    background-repeat: no-repeat;/*In case of resizing the image with repeated backgrounds, no-repeat can be choose to include in this document*/
+    height: 355px;
+    object-fit: contain; /*Using the object-fit property can specfiy how media (image or video) should be resized to fit*/
+    background-image: url(MemeOneResize.png)
+}/*Inputting the property of telling the system to preserve the aspect ratio or stretch & take up much space as possible*/
+/*This property has some values: the contain value is one of them*/
+/*Following the contain value with the object-fit property, this value keep the image's aspect ratio but resized to fit within the given dimension*/
+button {
+    margin: 10px 10px;
+    margin-top: 185px;
+    width: 19%;
+    height: 35px;
+    background-color: rgb(97, 57, 113);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+button[disabled], .button.disabled{ /*With the CSS style include for disabled buttons adds more creativity and experience for the user*/
+    cursor: not-allowed;
+    opacity: 0.65;
+    /*Without the CSS style, the user may get confused of which button are disabled*/
+    /*Inputting the not-allowed value with the cursor property is optional. Lowering the opacity of disabled buttons is reccomanded for users to know which buttons are disabled*/
+}
